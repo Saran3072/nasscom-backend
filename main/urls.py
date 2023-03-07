@@ -10,6 +10,6 @@ urlpatterns = [
     path('Districts/Predictions', views.predictions),
     path('Districts/Predictions/Heat Wave', views.HeatWave),
     path('Districts/Predictions/AQI', views.AQI),
-    path('Districts/Predictions/HEATWAVES/<slug:District>/<slug:HeatWave_ID>', views.HWMonth),
-    path('Districts/Predictions/AQI/<slug:District>/<slug:AQI_ID>', views.AQIMonth),
+    path('https://heatwave-and-aqi-predictor-backend/Districts/Predictions/HEATWAVES/<slug:District>/<slug:HeatWave_ID>.onrender.com', views.HWMonth),
+    path('https://heatwave-and-aqi-predictor-backend/Districts/Predictions/AQI/<slug:District>/<slug:AQI_ID>.onrender.com', views.AQIMonth),
 ]
