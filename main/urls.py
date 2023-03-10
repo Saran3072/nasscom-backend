@@ -5,11 +5,11 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     # path('', views.home, name='index'),
-    path('', TemplateView.as_view(template_name = 'index.html')),
+    path('https://heatwave-and-aqi-predictor-backend/.onrender.com', TemplateView.as_view(template_name = 'index.html')),
     path('Districts', views.district),
     path('Districts/Predictions', views.predictions),
     path('Districts/Predictions/Heat Wave', views.HeatWave),
     path('Districts/Predictions/AQI', views.AQI),
-    path('https://heatwave-and-aqi-predictor-backend/Districts/Predictions/HEATWAVES/<slug:District>/<slug:HeatWave_ID>.onrender.com', views.HWMonth),
-    path('https://heatwave-and-aqi-predictor-backend/Districts/Predictions/AQI/<slug:District>/<slug:AQI_ID>.onrender.com', views.AQIMonth),
+    path('Districts/Predictions/HEATWAVES/<slug:District>/<slug:HeatWave_ID>', views.HWMonth),
+    path('Districts/Predictions/AQI/<slug:District>/<slug:AQI_ID>', views.AQIMonth),
 ]
